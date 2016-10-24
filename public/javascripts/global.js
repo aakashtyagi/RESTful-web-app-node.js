@@ -8,12 +8,12 @@ $(document).ready(function(){
 	populateTable();
 });
 
-function populationTable(){
+function populateTable(){
 
 	var tableContent = ' ';
 
 	// jQuery AJAX call for JSON
-	$.getJson('/users/userlist', function(data){
+	$.getJSON('/users/userlist', function(data){
 
 		// for each item in JSON, add a new row and cells to the table
 		$.each(data, function(){
